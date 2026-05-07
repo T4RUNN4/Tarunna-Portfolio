@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import HTML5 from "../assets/HTML5.svg";
 import CSS from "../assets/CSS.svg";
-import Javascript from "../assets/Javascript.png";
+import JavaScript from "../assets/JavaScript.png";
 import TailwindCSS from "../assets/TailwindCSS.svg";
 import DaisyUI from "../assets/DaisyUI.svg";
 import React from "../assets/React.svg";
@@ -24,8 +24,8 @@ const skills = [
     logo: CSS,
   },
   {
-    name: "Javascript",
-    logo: Javascript,
+    name: "JavaScript",
+    logo: JavaScript,
   },
   {
     name: "TailwindCSS",
