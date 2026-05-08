@@ -40,7 +40,7 @@ export default function ProfileCard() {
 
         <div className="mt-1 flex items-center gap-2 text-purple-400">
           <ArrowUpRight size={18} />
-          <span className="text-sm font-medium">Frontend Developer</span>
+          <span className="text-sm font-medium">Full Stack Developer</span>
         </div>
 
         <a

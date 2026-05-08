@@ -1,6 +1,8 @@
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
+import About from "./sections/About";
 import Skills from "./sections/Skills";
+import Footer from "./sections/Footer";
 
 import Background from "./assets/background.jpg";
 
@@ -21,8 +23,10 @@ export default function App() {
         </div>
         <Navbar />
         <Hero />
+        <About />
         <Skills />
       </main>
+      <Footer />
     </>
   );
 }

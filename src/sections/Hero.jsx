@@ -33,8 +33,7 @@ export default function About() {
           </motion.h1>
 
           <div className="mt-8 max-w-xl text-lg leading-relaxed text-white/50">
-            I'm Tarunna Sen, a Frontend Developer who enjoys turning ideas into
-            clean, fast, and user-friendly web applications.
+           I am Tarunna Sen, a Full Stack Web Developer who builds websites that don't just work — they feel right. Blending logic, creativity, and real-world impact into every experience. Crafting thoughtful web experiences with the MERN stack.
             <br />
             <br />
             <div className="flex items-center gap-2">

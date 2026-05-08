@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+
 import HTML5 from "../assets/HTML5.svg";
 import CSS from "../assets/CSS.svg";
 import JavaScript from "../assets/JavaScript.png";
