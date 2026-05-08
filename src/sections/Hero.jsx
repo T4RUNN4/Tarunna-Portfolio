@@ -5,7 +5,10 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="home" className="relative flex items-center justify-center overflow-hidden px-10 py-20 text-white">
+    <section
+      id="home"
+      className="relative flex items-center justify-center overflow-hidden px-10 py-20 text-white"
+    >
       <div className="relative z-10 grid w-full max-w-7xl items-center  lg:grid-cols-2">
         <ProfileCard />
         <motion.div
@@ -33,7 +36,10 @@ export default function About() {
           </motion.h1>
 
           <div className="mt-8 max-w-xl text-lg leading-relaxed text-white/50">
-           I am Tarunna Sen, a Full Stack Web Developer who builds websites that don't just work — they feel right. Blending logic, creativity, and real-world impact into every experience. Crafting thoughtful web experiences with the MERN stack.
+            I am Tarunna Sen, a Full Stack Web Developer who builds websites
+            that don't just work — they feel right. Blending logic, creativity,
+            and real-world impact into every experience. Crafting thoughtful web
+            experiences with the MERN stack.
             <br />
             <br />
             <div className="flex items-center gap-2">
@@ -43,9 +49,7 @@ export default function About() {
               Currently working on:{" "}
               <div className="flex ml-2 items-center text-purple-400 hover:cursor-pointer">
                 <ArrowUpRight size={20} />
-                <span className="ml-1">
-                  Local Bus Chattgram
-                </span>
+                <span className="ml-1">Local Bus Chattgram</span>
               </div>
             </div>
           </div>
@@ -59,9 +63,9 @@ export default function About() {
             }}
             className="mt-12 flex gap-4"
           >
-            <button className="rounded-xl bg-purple-500 px-6 py-3 text-black transition hover:scale-105 hover:bg-purple-300">
+            <a className="rounded-xl bg-purple-500 px-6 py-3 text-black transition hover:cursor-pointer hover:bg-purple-600">
               Download Resume
-            </button>
+            </a>
           </motion.div>
         </motion.div>
       </div>

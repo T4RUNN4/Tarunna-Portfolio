@@ -1,10 +1,12 @@
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
+import Experience from "./sections/Experience";
 import Skills from "./sections/Skills";
 import Footer from "./sections/Footer";
 
 import Background from "./assets/background.jpg";
+import Achievements from "./sections/Achievement";
 
 export default function App() {
   return (
@@ -24,7 +26,9 @@ export default function App() {
         <Navbar />
         <Hero />
         <About />
+        <Experience />
         <Skills />
+        <Achievements />
       </main>
       <Footer />
     </>
