@@ -8,7 +8,7 @@ import DetailsCard from "../components/DetailsCard";
 
 export default function About() {
   return (
-    <section className="relative px-20 py-28">
+    <section id="about" className="relative px-20 py-28">
       <div className="absolute left-1/2 top-1/2 h-150 w-150 -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-500/10 blur-3xl" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
@@ -114,7 +114,17 @@ export default function About() {
               </motion.div>
             </div>
           </div>
-          <div className="text-xl leading-relaxed text-white/50">
+          <motion.div
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.7,
+              delay: 0.05,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+            className="text-xl leading-relaxed text-white/50"
+          >
             Programming started as curiosity, but it quickly became something
             much bigger for me. From building small experiments in my early
             teens to developing full-stack web applications today, I've always
@@ -140,7 +150,7 @@ export default function About() {
             my creativity and problem-solving mindset. For me, tech has never
             been just about writing code — it's about building experiences
             people remember.
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -9,7 +9,7 @@ import Background from "./assets/background.jpg";
 export default function App() {
   return (
     <>
-      <main className="relative min-h-screen w-full overflow-hidden bg-black text-white">
+      <main className="relative min-h-screen w-full bg-black text-white">
         <div className="absolute inset-0">
           <div
             className="absolute inset-0 bg-repeat-y bg-fixed opacity-35"

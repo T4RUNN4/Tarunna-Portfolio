@@ -5,7 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function About() {
   return (
-    <section className="relative flex items-center justify-center overflow-hidden px-10 py-20 text-white">
+    <section id="home" className="relative flex items-center justify-center overflow-hidden px-10 py-20 text-white">
       <div className="relative z-10 grid w-full max-w-7xl items-center  lg:grid-cols-2">
         <ProfileCard />
         <motion.div
