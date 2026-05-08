@@ -18,7 +18,7 @@ export default function SkillsCard({ index, logo, name }) {
       </div>
 
       <div className="flex flex-col items-center justify-center">
-        <div className="relative z-10 flex h-14 w-14 items-center justify-center rounded-2xl text-purple-400">
+        <div className="relative z-10 flex h-14 w-14 items-center justify-center rounded-2xl">
           <img src={logo} alt={name} />
         </div>
 

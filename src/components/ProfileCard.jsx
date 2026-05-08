@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
-import SocialIcon from "./SocialIcon";
-import { ArrowUpRight, Mail, MapPin, Airplay, Phone } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+
+import Facebook from "../assets/Facebook.svg";
+import Github from "../assets/Github.svg";
+import LinkedIn from "../assets/LinkedIn.svg";
 import Tarunna from "../assets/tarunna.jpg";
 
 export default function ProfileCard() {
@@ -62,9 +65,16 @@ export default function ProfileCard() {
           <Phone /> +880 1817-320099
         </a>
 
-        <div className="mt-6 flex items-center gap-4">
-          <SocialIcon icon={<Airplay size={18} />} />
-          <SocialIcon icon={<Airplay size={18} />} />
+        <div className="mt-6 flex items-center gap-2">
+          <a target="_blank" href="https://linkedin.com/in/tarunna-sen/">
+            <img src={LinkedIn} alt="LinkedIn" className="w-8 h-8" />
+          </a>
+          <a target="_blank" href="https://github.com/T4RUNN4/">
+            <img src={Github} alt="Github" className="w-8 h-8" />
+          </a>
+          <a target="_blank" href="https://www.facebook.com/tarunna.002">
+            <img src={Facebook} alt="Facebook" className="w-8 h-8" />
+          </a>
         </div>
       </div>
     </motion.div>
