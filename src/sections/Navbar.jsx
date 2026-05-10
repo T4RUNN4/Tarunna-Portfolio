@@ -47,7 +47,7 @@ export default function Navbar() {
           curr={curr}
           setCurr={setCurr}
           text="Achievements"
-          href="#Achievements"
+          href="#achievements"
           icon={<Award size={18} />}
         />
       </div>
