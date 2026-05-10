@@ -45,16 +45,13 @@ export default function Project() {
         "A dedicated page for the user to check for their lost items with enough detail to ensure that it's theirs.",
         "Dedicated page for all the routes, all drivers and all the rules so the user can instantly refer to them.",
       ],
-      improvements: [
-        "Planned to include real-time bus data from API",
-      ],
+      improvements: ["Planned to include real-time bus data from API"],
     },
   ];
 
   return (
     <section id="projects" className="relative px-10 md:px-20 py-28">
-      <div className="absolute left-1/2 top-1/2 h-150 w-150 -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-500/10 blur-3xl" />
-
+      <div className="absolute left-1/2 top-1/2 md:h-150 md:w-150 -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-500/10 blur-3xl overflow-x-hidden" />
       <div className="relative z-10 mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 70 }}

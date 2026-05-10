@@ -9,6 +9,7 @@ export default function About() {
       id="home"
       className="relative flex flex-col md:flex-row items-center justify-center px-10 py-20 text-white"
     >
+      <div className="absolute md:h-150 md:w-150 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-500/10 blur-3xl overflow-x-hidden" />
       <div className="relative z-10 grid w-full items-center grid-cols-1 md:grid-cols-2 gap-6">
         <ProfileCard />
         <motion.div
