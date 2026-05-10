@@ -96,6 +96,7 @@ export default function About() {
                 <div className="grid grid-rows-2 gap-2">
                   <DetailsCard
                     logo={Harvard}
+                    href="https://cs50.harvard.edu/certificates/dcef13b4-f103-4560-a406-f5931f14353d"
                     alt="Harvard"
                     date="June, 2025"
                     course="CS50x"
