@@ -1,4 +1,9 @@
 import { motion } from "framer-motion";
+
+import Portfolio from "../assets/portfolio.png"
+import Ctgbus from "../assets/ctgbus.png"
+import Cpibus from "../assets/cpibus.png"
+
 import ProjectCard from "../components/ProjectsCard";
 
 export default function Project() {
@@ -13,6 +18,8 @@ export default function Project() {
       techs: ["ReactJS", "Tailwindcss", "DaisyUI"],
       features: ["Interactive smooth animation", "Fully responsive UI"],
       improvements: ["Will work on a more unique UI"],
+      image: Portfolio,
+      alt: "portfolio ui"
     },
     {
       name: "Local Bus Chattogram",
@@ -31,6 +38,8 @@ export default function Project() {
         "Local Language of Chattogram will be added",
         "Data will be crowdsourced for improvements",
       ],
+      image: Ctgbus,
+      alt: "Local Bus Chattogram ui"
     },
     {
       name: "Chattogram Polytechnic Institute",
@@ -46,6 +55,8 @@ export default function Project() {
         "Dedicated page for all the routes, all drivers and all the rules so the user can instantly refer to them.",
       ],
       improvements: ["Planned to include real-time bus data from API"],
+      image: Cpibus,
+      alt: "CPI Bus ui"
     },
   ];
 
