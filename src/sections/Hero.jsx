@@ -7,9 +7,9 @@ export default function About() {
   return (
     <section
       id="home"
-      className="relative flex items-center justify-center overflow-hidden px-10 py-20 text-white"
+      className="relative flex flex-col md:flex-row items-center justify-center px-10 py-20 text-white"
     >
-      <div className="relative z-10 grid w-full max-w-7xl items-center lg:grid-cols-2">
+      <div className="relative z-10 grid w-full items-center grid-cols-1 md:grid-cols-2 gap-6">
         <ProfileCard />
         <motion.div
           initial={{ opacity: 0, y: 80 }}
@@ -20,6 +20,7 @@ export default function About() {
             delay: 0.15,
             ease: [0.22, 1, 0.36, 1],
           }}
+          className="mt-10 lg:mt-0"
         >
           <motion.h1
             initial={{ opacity: 0, y: 70 }}
@@ -29,13 +30,13 @@ export default function About() {
               delay: 0.1,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="text-8xl font-bold tracking-tight"
+            className="text-5xl lg:text-7xl font-bold tracking-tight"
           >
             <span className="text-purple-500">Hello,</span>Visitor{" "}
-            <span className="text-7xl">👋</span>
+            <span className="text-5xl lg:text-7xl">👋</span>
           </motion.h1>
 
-          <div className="mt-8 max-w-xl text-lg leading-relaxed text-white/50">
+          <div className="mt-8 text-sm lg:text-lg text-white/50">
             I am Tarunna Sen, a Full Stack Web Developer who builds websites
             that don't just work — they feel right. Blending logic, creativity,
             and real-world impact into every experience. Crafting thoughtful web

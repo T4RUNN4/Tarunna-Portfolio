@@ -32,48 +32,54 @@ export default function ProfileCard() {
       </svg>
 
       <div className="overflow-hidden rounded-2xl bg-purple-600">
-        <img src={Tarunna} alt="Profile" className="h-80 w-full object-cover" />
+        <img
+          src={Tarunna}
+          alt="Profile"
+          className="h-60 lg:h-80 w-full object-cover"
+        />
       </div>
 
       <div className="mt-5">
-        <h3 className="text-3xl font-bold">Tarunna Sen</h3>
+        <h3 className="text-2xl lg:text-3xl font-bold">Tarunna Sen</h3>
 
         <div className="mt-1 flex items-center gap-2 text-purple-400">
           <ArrowUpRight size={18} />
-          <span className="text-sm font-medium">Full Stack Developer</span>
+          <span className="text-xs lg:text-sm font-medium">
+            Full Stack Developer
+          </span>
         </div>
 
         <a
           href="https://maps.app.goo.gl/mEHmzr1jsQ2DSMYu9"
           target="_blank"
-          className="flex gap-2 mt-5 text-sm leading-relaxed text-white/60 hover:text-purple-400 transition"
+          className="flex gap-2 mt-5 text-xs lg:text-sm leading-relaxed text-white/60 hover:text-purple-400 transition"
         >
           <MapPin /> Chattogram, Bangladesh
         </a>
         <a
           href="mailto:tarunnasen@gmail.com"
           target="_blank"
-          className="flex gap-2 mt-1.5  text-sm leading-relaxed text-white/60 hover:text-purple-400 transition"
+          className="flex gap-2 mt-1.5  text-xs lg:text-sm leading-relaxed text-white/60 hover:text-purple-400 transition"
         >
           <Mail /> tarunnasen@gmail.com
         </a>
         <a
           href="https://wa.me/8801817320099"
           target="_blank"
-          className="flex gap-2 mt-1.5  text-sm leading-relaxed text-white/60 hover:text-purple-400 transition"
+          className="flex gap-2 mt-1.5  text-xs lg:text-sm leading-relaxed text-white/60 hover:text-purple-400 transition"
         >
           <Phone /> +880 1817-320099
         </a>
 
         <div className="mt-6 flex items-center gap-2">
           <a target="_blank" href="https://linkedin.com/in/tarunna-sen/">
-            <img src={LinkedIn} alt="LinkedIn" className="w-8 h-8" />
+            <img src={LinkedIn} alt="LinkedIn" className="w-6 lg:w-8 h-6 lg:h-8" />
           </a>
           <a target="_blank" href="https://github.com/T4RUNN4/">
-            <img src={Github} alt="Github" className="w-8 h-8" />
+            <img src={Github} alt="Github" className="w-6 lg:w-8 h-6 lg:h-8" />
           </a>
           <a target="_blank" href="https://www.facebook.com/tarunna.002">
-            <img src={Facebook} alt="Facebook" className="w-8 h-8" />
+            <img src={Facebook} alt="Facebook" className="w-6 lg:w-8 h-6 lg:h-8" />
           </a>
         </div>
       </div>
