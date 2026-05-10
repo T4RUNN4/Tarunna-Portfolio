@@ -5,3 +5,8 @@ body {
   font-family: "Geist", sans-serif;
   font-optical-sizing: auto;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}

@@ -16,7 +16,7 @@ export default function ProfileCard() {
         duration: 0.8,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className="relative mx-auto w-full max-w-sm rounded-4xl] border border-white/10 bg-white/5 p-5 shadow-2xl backdrop-blur-xl"
+      className="relative mx-auto w-full max-w-sm rounded-4xl border border-white/10 bg-white/5 p-5 shadow-2xl backdrop-blur-xl"
     >
       <svg
         className="pointer-events-none absolute left-0 top-0 h-full w-full"
