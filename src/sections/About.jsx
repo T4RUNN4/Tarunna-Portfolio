@@ -124,7 +124,7 @@ export default function About() {
               delay: 0.05,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="md:text-lg lg:text-xl leading-relaxed text-white/50"
+            className="md:text-lg lg:text-xl text-justify text-white/50"
           >
             Programming started as curiosity, but it quickly became something
             much bigger for me. From building small experiments in my early

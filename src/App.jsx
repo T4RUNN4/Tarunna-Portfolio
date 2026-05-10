@@ -27,8 +27,8 @@ export default function App() {
         <Navbar />
         <Hero />
         <About />
-        <Projects />
         <Experience />
+        <Projects />
         <Skills />
         <Achievements />
       </main>

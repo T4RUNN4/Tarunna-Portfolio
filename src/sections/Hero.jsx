@@ -36,7 +36,7 @@ export default function About() {
             <span className="text-5xl lg:text-7xl">👋</span>
           </motion.h1>
 
-          <div className="mt-8 text-sm lg:text-lg text-white/50">
+          <div className="mt-8 text-sm lg:text-lg text-white/50 text-justify">
             I am Tarunna Sen, a Full Stack Web Developer who builds websites
             that don't just work — they feel right. Blending logic, creativity,
             and real-world impact into every experience. Crafting thoughtful web
@@ -46,13 +46,13 @@ export default function About() {
             <div className="flex items-center gap-2">
               Favorite Tech: <img src={React} alt="React" className="w-7 h-7" />
             </div>
-            <div className="flex items-center">
+            <a href="#projects" className="flex items-center">
               Currently working on:{" "}
-              <div className="flex ml-2 items-center text-purple-400 hover:cursor-pointer">
+              <span className="flex ml-2 items-center text-purple-400 hover:cursor-pointer">
                 <ArrowUpRight size={20} />
                 <span className="ml-1">Local Bus Chattgram</span>
-              </div>
-            </div>
+              </span>
+            </a>
           </div>
 
           <motion.div
