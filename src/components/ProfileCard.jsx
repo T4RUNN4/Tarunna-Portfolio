@@ -35,7 +35,7 @@ export default function ProfileCard() {
         <img
           src={Tarunna}
           alt="Profile"
-          className="h-60 lg:h-80 w-full object-cover"
+          className="h-60 lg:h-80 w-full object-cover object-[center_30%]"
         />
       </div>
 
