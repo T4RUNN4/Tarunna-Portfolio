@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative px-20 py-28">
+    <section id="experience" className="relative px-10 md:px-20 py-28">
       <div className="absolute left-1/2 top-1/2 h-150 w-150 -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-500/10 blur-3xl" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
@@ -17,7 +17,7 @@ export default function Experience() {
           className="text-center"
         >
           <div className="leading-none">
-            <h2 className="text-purple-500 font-bold md:text-6xl lg:text-8xl">
+            <h2 className="text-purple-500 font-bold text-4xl md:text-6xl lg:text-8xl">
               Experience
             </h2>
           </div>
@@ -36,16 +36,16 @@ export default function Experience() {
           <div className="flex flex-col rounded-3xl border border-white/10 bg-white/5 px-10 py-6 backdrop-blur-xl transition duration-300 hover:border-purple-400/30 hover:bg-white/10">
             <div className="flex items-center gap-8">
               <div className="flex flex-col justify-center">
-                <h6 className="text-md leading-relaxed text-white/50 mb-0.5">
+                <h6 className="text-sm md:text-md leading-relaxed text-white/50 mb-0.5">
                   Sep, 2025 - Nov 2025
                 </h6>
-                <h2 className="text-white font-medium text-4xl">
+                <h2 className="text-white font-medium text-2xl md:text-4xl">
                   M/S Ridwan Sarker Trade
                 </h2>
-                <h6 className="text-md leading-relaxed text-white/50">
+                <h6 className="text-sm md:text-md leading-relaxed text-white/50">
                   Front End Developer
                 </h6>
-                <ul className="text-md leading-relaxed text-white/50 mt-4 list-disc ml-4">
+                <ul className="text-sm md:text-md leading-relaxed text-white/50 mt-4 list-disc ml-4">
                   <li>
                     Developed a B2B e-commerce platform using React and Firebase
                   </li>

@@ -5,7 +5,7 @@ import SPSC from "../assets/SPSC.png";
 
 export default function Achievements() {
   return (
-    <section id="Achievements" className="relative px-20 py-28">
+    <section id="Achievements" className="relative px-10 md:px-20 py-28">
       <div className="absolute left-1/2 top-1/2 h-150 w-150 -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-500/10 blur-3xl" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
@@ -20,12 +20,12 @@ export default function Achievements() {
           className="text-center"
         >
           <div className="leading-none">
-            <h2 className="text-2xl text-purple-500 font-bold md:text-6xl lg:text-8xl">
+            <h2 className="text-purple-500 font-bold text-4xl md:text-6xl lg:text-8xl">
               Achievements
             </h2>
           </div>
         </motion.div>
-        <div className="grid grid-cols-2 gap-4 mt-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-14">
           <DetailsCard
             logo={SPSC}
             rounded="true"

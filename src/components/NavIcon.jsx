@@ -6,7 +6,7 @@ export default function NavIcon({ icon, text, href, curr, setCurr }) {
       onClick={() => setCurr(text)}
     >
       {icon}
-      {text}
+      <span className="hidden md:flex">{text}</span>
     </a>
   );
 }

@@ -23,13 +23,13 @@ export default function About() {
           className="text-center"
         >
           <div className="leading-none">
-            <h2 className="text-purple-500 font-bold md:text-6xl lg:text-8xl">
+            <h2 className="text-purple-500 font-bold text-4xl md:text-6xl lg:text-8xl">
               About <span className="text-white">Me</span>
             </h2>
           </div>
         </motion.div>
 
-        <div className="mt-20 grid grid-cols-2 gap-10">
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="flex flex-col gap-4">
             <div>
               <div className="leading-none">
@@ -124,7 +124,7 @@ export default function About() {
               delay: 0.05,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="text-lg lg:text-xl leading-relaxed text-white/50"
+            className="md:text-lg lg:text-xl leading-relaxed text-white/50"
           >
             Programming started as curiosity, but it quickly became something
             much bigger for me. From building small experiments in my early

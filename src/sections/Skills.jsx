@@ -68,7 +68,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative px-20 py-28">
+    <section id="skills" className="relative px-10 md:px-20 py-28">
       <div className="absolute left-1/2 top-1/2 h-150 w-150 -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-500/10 blur-3xl" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
@@ -83,7 +83,7 @@ export default function Skills() {
           className="text-center"
         >
           <div className="leading-none">
-            <h2 className="text-2xl text-purple-500 font-bold md:text-6xl lg:text-8xl">
+            <h2 className="text-purple-500 font-bold text-4xl md:text-6xl lg:text-8xl">
               Skills
             </h2>
           </div>
