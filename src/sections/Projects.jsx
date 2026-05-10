@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 import Portfolio from "../assets/portfolio.png"
-import Ctgbus from "../assets/ctgbus.png"
-import Cpibus from "../assets/cpibus.png"
+import Ctgbus from "../assets/Ctgbus.png"
+import Cpibus from "../assets/Cpibus.png"
 
 import ProjectCard from "../components/ProjectsCard";
 
