@@ -20,7 +20,7 @@ export default function Achievements() {
           className="text-center"
         >
           <div className="leading-none">
-            <h2 className="text-2xl text-purple-500 font-bold lg:text-8xl">
+            <h2 className="text-2xl text-purple-500 font-bold md:text-6xl lg:text-8xl">
               Achievements
             </h2>
           </div>

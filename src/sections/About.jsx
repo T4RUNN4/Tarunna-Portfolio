@@ -8,7 +8,7 @@ import DetailsCard from "../components/DetailsCard";
 
 export default function About() {
   return (
-    <section id="about" className="relative px-20 py-28">
+    <section id="about" className="relative px-10 lg:px-20 py-28">
       <div className="absolute left-1/2 top-1/2 h-150 w-150 -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-500/10 blur-3xl" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
@@ -23,7 +23,7 @@ export default function About() {
           className="text-center"
         >
           <div className="leading-none">
-            <h2 className="text-2xl text-purple-500 font-bold lg:text-8xl">
+            <h2 className="text-purple-500 font-bold md:text-6xl lg:text-8xl">
               About <span className="text-white">Me</span>
             </h2>
           </div>
@@ -124,7 +124,7 @@ export default function About() {
               delay: 0.05,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="text-xl leading-relaxed text-white/50"
+            className="text-lg lg:text-xl leading-relaxed text-white/50"
           >
             Programming started as curiosity, but it quickly became something
             much bigger for me. From building small experiments in my early

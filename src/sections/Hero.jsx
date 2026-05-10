@@ -9,7 +9,7 @@ export default function About() {
       id="home"
       className="relative flex items-center justify-center overflow-hidden px-10 py-20 text-white"
     >
-      <div className="relative z-10 grid w-full max-w-7xl items-center  lg:grid-cols-2">
+      <div className="relative z-10 grid w-full max-w-7xl items-center lg:grid-cols-2">
         <ProfileCard />
         <motion.div
           initial={{ opacity: 0, y: 80 }}
