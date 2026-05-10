@@ -33,7 +33,7 @@ export default function Experience() {
           }}
           className="mt-20 group relative overflow-hidden "
         >
-          <div className="flex flex-col rounded-3xl border border-white/10 bg-white/5 px-10 py-6 backdrop-blur-xl transition duration-300 hover:border-purple-400/30 hover:bg-white/10">
+          <div className="flex flex-col rounded-3xl border border-white/10 bg-white/5 px-6 md:px-10 py-6 backdrop-blur-xl transition duration-300 hover:border-purple-400/30 hover:bg-white/10">
             <div className="flex items-center gap-8">
               <div className="flex flex-col justify-center">
                 <h6 className="text-sm md:text-md leading-relaxed text-white/50 mb-0.5">
