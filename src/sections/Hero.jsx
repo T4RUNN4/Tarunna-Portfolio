@@ -65,7 +65,7 @@ export default function About() {
             }}
             className="mt-12 flex gap-4"
           >
-            <a className="rounded-xl bg-purple-500 px-6 py-3 text-black transition hover:cursor-pointer hover:bg-purple-600">
+            <a href="../assets/Resume.pdf" download="Resume - Tarunna Sen.pdf" className="rounded-xl bg-purple-500 px-6 py-3 text-black transition hover:cursor-pointer hover:bg-purple-600">
               Download Resume
             </a>
           </motion.div>

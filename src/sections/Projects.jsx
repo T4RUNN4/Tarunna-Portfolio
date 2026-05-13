@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 import Portfolio from "../assets/portfolio.png"
-import Ctgbus from "../assets/ctgbus.png"
-import Cpibus from "../assets/cpibus.png"
+import Ctgbus from "../assets/Ctgbus.png"
+import Cpibus from "../assets/Cpibus.png"
 
 import ProjectCard from "../components/ProjectsCard";
 
@@ -42,7 +42,7 @@ export default function Project() {
       alt: "Local Bus Chattogram ui"
     },
     {
-      name: "Chattogram Polytechnic Institute",
+      name: "Campus Transport Tracker",
       status: "Finished",
       description:
         "So, on my Diploma curriculam, I were needed to present a website as project. As a Lead Developer of our team, I decided to build this project called 'Chattogram Polytechnic Institute Bus Tracker', which is initially a bus tracker for our campus. Although when we were making this project, there was no bus service on our campus. So our whole project was made based on mock data.",
