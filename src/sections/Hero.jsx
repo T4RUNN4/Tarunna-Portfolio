@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import ProfileCard from "../components/ProfileCard";
 import React from "../assets/React.svg";
 import { ArrowUpRight } from "lucide-react";
+import Resume from "../assets/Resume - Tarunna.pdf";
 
 export default function About() {
   return (
@@ -65,7 +66,7 @@ export default function About() {
             }}
             className="mt-12 flex gap-4"
           >
-            <a href="../assets/Resume - Tarunna.pdf" download="Resume - Tarunna Sen.pdf" className="rounded-xl bg-purple-500 px-6 py-3 text-black transition hover:cursor-pointer hover:bg-purple-600">
+            <a href={Resume} download="Resume - Tarunna Sen.pdf" className="rounded-xl bg-purple-500 px-6 py-3 text-black transition hover:cursor-pointer hover:bg-purple-600">
               Download Resume
             </a>
           </motion.div>
