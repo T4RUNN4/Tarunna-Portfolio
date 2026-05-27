@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import ProfileCard from "../components/ProfileCard";
 import React from "../assets/React.svg";
 import { ArrowUpRight } from "lucide-react";
-import Resume from "../assets/Resume - Tarunna.pdf";
+import Resume from "../assets/Resume-Tarunna_Sen.pdf";
 
 export default function About() {
   return (
