@@ -24,13 +24,15 @@ export default function App() {
           <div className="absolute inset-0 bg-black/70" />
           <div className="absolute md:h-150 md:w-150 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-500/10 blur-3xl overflow-x-hidden" />
         </div>
-        <Navbar />
+        <div className="px-30">
+          <Navbar />
         <Hero />
         <About />
         <Experience />
         <Projects />
         <Skills />
         <Achievements />
+        </div>
       </main>
       <Footer />
     </>

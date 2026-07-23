@@ -16,7 +16,7 @@ export default function ProfileCard() {
         duration: 0.8,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className="relative mx-auto w-full max-w-sm rounded-4xl border border-white/10 bg-white/5 p-5 shadow-2xl backdrop-blur-xl"
+      className="relative mx-auto w-full max-w-sm rounded-sm border border-white/10 bg-white/5 p-5 shadow-2xl backdrop-blur-xl hover:scale-105 transition-transform duration-200"
     >
       <svg
         className="pointer-events-none absolute left-0 top-0 h-full w-full"
@@ -31,7 +31,7 @@ export default function ProfileCard() {
         />
       </svg>
 
-      <div className="overflow-hidden rounded-2xl bg-purple-600">
+      <div className="overflow-hidden rounded-sm bg-purple-600">
         <img
           src={Tarunna}
           alt="Profile"
@@ -40,7 +40,7 @@ export default function ProfileCard() {
       </div>
 
       <div className="mt-5">
-        <h3 className="text-2xl lg:text-3xl font-bold">Tarunna Sen</h3>
+        <h3 className="text-3xl lg:text-3xl font-bold">Tarunna Sen</h3>
 
         <div className="mt-1 flex items-center gap-2 text-purple-400">
           <ArrowUpRight size={18} />
