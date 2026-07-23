@@ -15,10 +15,7 @@ export default function ProjectCard({ project }) {
       className="flex flex-col rounded-sm border border-white/10 bg-white/5 px-6 md:px-10 py-6 backdrop-blur-xl hover:border-purple-400/30 hover:bg-white/10 hover:scale-105 transition-transform duration-200"
     >
       <div className="flex flex-col items-center justify-center gap-8">
-        <img
-          src={project.image}
-          alt={project.alt}
-        />
+        <img src={project.image} alt={project.alt} />
         <div className="flex flex-col justify-center">
           <h1 className="mb-2">
             <span
@@ -62,19 +59,23 @@ export default function ProjectCard({ project }) {
               </li>
             ))}
           </ul>
-          <h6 className="text-xs lg:text-sm text-justify text-white/50 mt-4">
-            Improvements
-          </h6>
-          <ul className="list-disc mt-2">
-            {project.improvements.map((improvement, index) => (
-              <li
-                className="text-xs leading-relaxed text-justify text-white/50 ml-3"
-                key={index}
-              >
-                {improvement}
-              </li>
-            ))}
-          </ul>
+          {project.improvements.length > 1 && (
+            <>
+              <h6 className="text-xs lg:text-sm text-justify text-white/50 mt-4">
+                Improvements
+              </h6>
+              <ul className="list-disc mt-2">
+                {project.improvements.map((improvement, index) => (
+                  <li
+                    className="text-xs leading-relaxed text-justify text-white/50 ml-3"
+                    key={index}
+                  >
+                    {improvement}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
           <div className="flex gap-2 mt-6">
             {project.techs.map((tech, index) => (
               <p key={index}>

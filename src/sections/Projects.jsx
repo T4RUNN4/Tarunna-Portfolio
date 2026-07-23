@@ -1,16 +1,34 @@
 import { motion } from "framer-motion";
 
-import Portfolio from "../assets/portfolio.png"
-import Ctgbus from "../assets/Ctgbus.png"
-import Cpibus from "../assets/Cpibus.png"
+import Portfolio from "../assets/portfolio.png";
+import Ctgbus from "../assets/Ctgbus.png";
+import LegalEase from "../assets/LegalEase.jpeg";
 
 import ProjectCard from "../components/ProjectsCard";
 
 export default function Project() {
   const projects = [
     {
+      name: "Legal Ease",
+      status: "Completed",
+      description:
+        "Legal Ease is a marketplace for lawyers and clients similar to Fiverr and upwork. Here lawyers can come and registed their profile as well as clients can browse and hire lawyer for their legal process. A one stop solution for both lawyer and clients",
+      liveLink: "https://legal-ease-tarunna.vercel.app/",
+      github: "https://github.com/T4RUNN4/Legal-Ease",
+      techs: ["NextJS", "ExpressJS", "ReactJS", "Mongodb"],
+      features: [
+        "Multiple Laywer Gigs under one unified profile",
+        "Hiring conformation before payment processing",
+        "Secured payment system with Stripe",
+        "Confirmation fee for  clients to avoid scama",
+      ],
+      improvements: [],
+      image: LegalEase,
+      alt: "legal ease ui",
+    },
+    {
       name: "Personal Portfolio",
-      status: "finished",
+      status: "Completed",
       description:
         "As a web-developer, having a personal portfolio website is more important than breathing. So I did some researched, and made one for myself. My official portfolio website. I tried to fit the best possible info from my life and easy as well as fun for user.",
       liveLink: "https://tarunna-sen.vercel.app/",
@@ -19,11 +37,11 @@ export default function Project() {
       features: ["Interactive smooth animation", "Fully responsive UI"],
       improvements: ["Will work on a more unique UI"],
       image: Portfolio,
-      alt: "portfolio ui"
+      alt: "portfolio ui",
     },
     {
       name: "Local Bus Chattogram",
-      status: "ongoing",
+      status: "Completed",
       description:
         "The other day, almost every city has a system where users can find details about local trasnport routes and fare. But for my city Chattogram, there is nothing like this. So, I made one, where users can search for local buses available for their destination and possible fare amount.",
       liveLink: "https://local-bus-finder-chattogram.vercel.app/",
@@ -39,24 +57,7 @@ export default function Project() {
         "Data will be crowdsourced for improvements",
       ],
       image: Ctgbus,
-      alt: "Local Bus Chattogram ui"
-    },
-    {
-      name: "Campus Transport Tracker",
-      status: "Finished",
-      description:
-        "So, on my Diploma curriculam, I were needed to present a website as project. As a Lead Developer of our team, I decided to build this project called 'Chattogram Polytechnic Institute Bus Tracker', which is initially a bus tracker for our campus. Although when we were making this project, there was no bus service on our campus. So our whole project was made based on mock data.",
-      liveLink: "https://cpi-bus.vercel.app/",
-      github: "https://github.com/T4RUNN4/Chattogram-Polytechnic-Institute-Bus",
-      techs: ["ReactJS", "TailwindCSS", "ScrollReveal"],
-      features: [
-        "Track campus bus in real-time with the info number of seats and the possible required time to arrive at the user's stop",
-        "A dedicated page for the user to check for their lost items with enough detail to ensure that it's theirs.",
-        "Dedicated page for all the routes, all drivers and all the rules so the user can instantly refer to them.",
-      ],
-      improvements: ["Planned to include real-time bus data from API"],
-      image: Cpibus,
-      alt: "CPI Bus ui"
+      alt: "Local Bus Chattogram ui",
     },
   ];
 
