@@ -55,7 +55,7 @@ export default function About() {
                   delay: 0.05,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="mt-6 group relative overflow-hidden "
+                className="mt-6 group relative overflow-hidden hover:scale-105 transition-transform durna"
               >
                 <DetailsCard
                   logo={CPI}

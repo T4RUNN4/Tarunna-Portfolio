@@ -31,9 +31,9 @@ export default function Experience() {
             delay: 0.05,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="mt-20 group relative overflow-hidden "
+          className="mt-20 group relative overflow-hidden hover:scale-105 transition-transform duration-200"
         >
-          <div className="flex flex-col rounded-sm border border-white/10 bg-white/5 px-6 md:px-10 py-6 backdrop-blur-xl transition duration-300 hover:border-purple-400/30 hover:bg-white/10">
+          <div className="flex flex-col rounded-sm border border-white/10 bg-white/5 px-6 md:px-10 py-6 backdrop-blur-xl hover:border-purple-400/30 hover:bg-white/10 transition-transform duration-200">
             <div className="flex items-center gap-8">
               <div className="flex flex-col justify-center">
                 <h6 className="text-sm md:text-md leading-relaxed text-white/50 mb-2">
@@ -46,9 +46,7 @@ export default function Experience() {
                   Front End Developer
                 </h6>
                 <ul className="text-sm md:text-md leading-relaxed text-white/50 mt-4 list-disc ml-4">
-                  <li>
-                    Developed a B2B e-commerce platform using React
-                  </li>
+                  <li>Developed a B2B e-commerce platform using React</li>
                   <li>
                     Colaborated with UI designer to translate design concepts
                     into responsive interface.
