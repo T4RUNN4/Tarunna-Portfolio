@@ -33,21 +33,21 @@ export default function Experience() {
           }}
           className="mt-20 group relative overflow-hidden "
         >
-          <div className="flex flex-col rounded-3xl border border-white/10 bg-white/5 px-6 md:px-10 py-6 backdrop-blur-xl transition duration-300 hover:border-purple-400/30 hover:bg-white/10">
+          <div className="flex flex-col rounded-sm border border-white/10 bg-white/5 px-6 md:px-10 py-6 backdrop-blur-xl transition duration-300 hover:border-purple-400/30 hover:bg-white/10">
             <div className="flex items-center gap-8">
               <div className="flex flex-col justify-center">
-                <h6 className="text-sm md:text-md leading-relaxed text-white/50 mb-0.5">
+                <h6 className="text-sm md:text-md leading-relaxed text-white/50 mb-2">
                   Sep, 2025 - Nov 2025
                 </h6>
-                <h2 className="text-white font-medium text-2xl md:text-4xl">
+                <h2 className="text-white font-bold text-2xl md:text-4xl">
                   M/S Ridwan Sarker Trade
                 </h2>
-                <h6 className="text-sm md:text-md leading-relaxed text-white/50">
+                <h6 className="text-sm md:text-md leading-relaxed text-purple-400">
                   Front End Developer
                 </h6>
                 <ul className="text-sm md:text-md leading-relaxed text-white/50 mt-4 list-disc ml-4">
                   <li>
-                    Developed a B2B e-commerce platform using React and Firebase
+                    Developed a B2B e-commerce platform using React
                   </li>
                   <li>
                     Colaborated with UI designer to translate design concepts
