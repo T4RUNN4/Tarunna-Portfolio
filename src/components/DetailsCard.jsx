@@ -10,6 +10,7 @@ export default function DetailsCard({
   description,
   rounded,
   href,
+  status,
 }) {
   return (
     <motion.div
@@ -21,7 +22,7 @@ export default function DetailsCard({
         delay: 0.05,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className="flex flex-col rounded-3xl border border-white/10 bg-white/5 px-4 py-6 backdrop-blur-xl transition duration-300 hover:border-purple-400/30 hover:bg-white/10"
+      className="flex flex-col rounded-sm border border-white/10 bg-white/5 px-4 py-6 backdrop-blur-xl hover:border-purple-400/30 hover:bg-white/10"
     >
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
         <img
@@ -30,9 +31,18 @@ export default function DetailsCard({
           className={`w-30 h-30 ${rounded ? "rounded-full" : ""}`}
         />
         <div className="flex flex-col justify-center">
-          <h6 className="text-xs leading-relaxed text-white/50 mb-0.5">
-            {date}
-          </h6>
+          <div className="flex flex-row items-center justify-between mb-4">
+            <h6 className="text-xs leading-relaxed text-white/50 mb-0.5">
+              {date}
+            </h6>
+            {status && (
+              <p
+                className={`text-xs text-black ${status === "Completed" ? "bg-green-400" : "bg-amber-400"} px-2 py-0.5 rounded-sm`}
+              >
+                {status}
+              </p>
+            )}
+          </div>
           <h2 className="text-white font-medium md:text-xl lg:text-2xl">
             {href ? (
               <a

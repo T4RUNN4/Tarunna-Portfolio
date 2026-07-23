@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 import Facebook from "../assets/Facebook.svg";
 import Github from "../assets/Github.svg";
@@ -42,17 +42,14 @@ export default function ProfileCard() {
       <div className="mt-5">
         <h3 className="text-3xl lg:text-3xl font-bold">Tarunna Sen</h3>
 
-        <div className="mt-1 flex items-center gap-2 text-purple-400">
-          <ArrowUpRight size={18} />
-          <span className="text-xs lg:text-sm font-medium">
-            Full Stack Developer
-          </span>
+        <div className="mt-1 flex items-center gap-2 text-purple-400 text-xs lg:text-sm font-medium">
+          Full Stack Developer
         </div>
 
         <a
           href="https://maps.app.goo.gl/mEHmzr1jsQ2DSMYu9"
           target="_blank"
-          className="flex gap-2 mt-5 text-xs lg:text-sm leading-relaxed text-white/60 hover:text-purple-400 transition"
+          className="flex gap-2 mt-6 text-xs lg:text-sm leading-relaxed text-white/60 hover:text-purple-400 transition"
         >
           <MapPin /> Chattogram, Bangladesh
         </a>
@@ -71,15 +68,23 @@ export default function ProfileCard() {
           <Phone /> +880 1817-320099
         </a>
 
-        <div className="mt-6 flex items-center gap-2">
+        <div className="mt-8 flex items-center gap-4">
           <a target="_blank" href="https://linkedin.com/in/tarunna-sen/">
-            <img src={LinkedIn} alt="LinkedIn" className="w-6 lg:w-8 h-6 lg:h-8" />
+            <img
+              src={LinkedIn}
+              alt="LinkedIn"
+              className="w-6 lg:w-8 h-6 lg:h-8"
+            />
           </a>
           <a target="_blank" href="https://github.com/T4RUNN4/">
             <img src={Github} alt="Github" className="w-6 lg:w-8 h-6 lg:h-8" />
           </a>
           <a target="_blank" href="https://www.facebook.com/tarunna.002">
-            <img src={Facebook} alt="Facebook" className="w-6 lg:w-8 h-6 lg:h-8" />
+            <img
+              src={Facebook}
+              alt="Facebook"
+              className="w-6 lg:w-8 h-6 lg:h-8"
+            />
           </a>
         </div>
       </div>

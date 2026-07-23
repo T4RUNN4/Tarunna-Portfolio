@@ -64,6 +64,7 @@ export default function About() {
                   course="Diploma-in-Engineering"
                   subject="Computer Science and Technology"
                   description="Studying Diploma-in-Engineering from Chattogram Polytechnic Institute on Computer Science and Technolgy."
+                  status="On-going"
                 />
               </motion.div>
             </div>
@@ -102,6 +103,7 @@ export default function About() {
                     course="CS50x"
                     subject="Introduction to Computer Science"
                     description="Completed CS50 from Harvard and learned about C, Python, Web developement, Database and DSA by finishing 9 assignments and 1 final project."
+                    status="Completed"
                   />
                   <DetailsCard
                     logo={PH}
@@ -110,6 +112,7 @@ export default function About() {
                     course="Complete Web Develepment"
                     subject="MERN-stack web development course"
                     description="Compliting 6-month long bootcamp on web development along by finishing 11 assignments."
+                    status="On-going"
                   />
                 </div>
               </motion.div>
