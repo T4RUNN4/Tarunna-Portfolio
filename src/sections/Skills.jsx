@@ -1,32 +1,39 @@
 import { motion } from "framer-motion";
 
-import HTML5 from "../assets/HTML5.svg";
-import CSS from "../assets/CSS.svg";
 import JavaScript from "../assets/JavaScript.png";
 import TailwindCSS from "../assets/TailwindCSS.svg";
 import DaisyUI from "../assets/DaisyUI.svg";
 import React from "../assets/React.svg";
 import NextJS from "../assets/NextJS.svg";
 import Mongodb from "../assets/Mongodb.svg";
-import Firebase from "../assets/Firebase.svg";
 import BetterAuth from "../assets/BetterAuth.svg";
 import Github from "../assets/Github.svg";
 import Git from "../assets/Git.svg";
+import ExpressJS from "../assets/ExpressJS.svg";
+import Typescript from "../assets/Typescript.svg";
 
 import SkillsCard from "../components/SkillsCard";
 
 const skills = [
   {
-    name: "HTML",
-    logo: HTML5,
+    name: "NextJS",
+    logo: NextJS,
   },
   {
-    name: "CSS",
-    logo: CSS,
+    name: "ExpressJS",
+    logo: ExpressJS,
   },
   {
-    name: "JavaScript",
-    logo: JavaScript,
+    name: "React",
+    logo: React,
+  },
+  {
+    name: "Mongodb",
+    logo: Mongodb,
+  },
+  {
+    name: "Typescript",
+    logo: Typescript,
   },
   {
     name: "TailwindCSS",
@@ -35,22 +42,6 @@ const skills = [
   {
     name: "daisyUI",
     logo: DaisyUI,
-  },
-  {
-    name: "React",
-    logo: React,
-  },
-  {
-    name: "NextJS",
-    logo: NextJS,
-  },
-  {
-    name: "Mongodb",
-    logo: Mongodb,
-  },
-  {
-    name: "Firebase",
-    logo: Firebase,
   },
   {
     name: "BetterAuth",
@@ -89,7 +80,7 @@ export default function Skills() {
           </div>
         </motion.div>
 
-        <div className="mt-20 grid gap-5 grid-cols-2 lg:grid-cols-6">
+        <div className="mt-20 grid gap-5 grid-cols-2 lg:grid-cols-5">
           {skills.map((skill, index) => (
             <SkillsCard
               key={index}

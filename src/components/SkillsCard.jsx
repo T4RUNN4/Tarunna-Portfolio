@@ -11,7 +11,7 @@ export default function SkillsCard({ index, logo, name }) {
         delay: index * 0.05,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition duration-300 hover:border-purple-400/30 hover:bg-white/10"
+      className="group relative overflow-hidden rounded-sm border border-white/10 bg-white/5 p-6 backdrop-blur-xl hover:border-purple-400/30 hover:bg-white/10 hover:scale-105 transition-transform duration-200"
     >
       <div className="absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100">
         <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-purple-400/10 blur-3xl" />
