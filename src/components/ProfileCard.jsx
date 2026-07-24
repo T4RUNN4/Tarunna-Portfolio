@@ -69,17 +69,29 @@ export default function ProfileCard() {
         </a>
 
         <div className="mt-8 flex items-center gap-4">
-          <a target="_blank" href="https://linkedin.com/in/tarunna-sen/">
+          <a
+            target="_blank"
+            href="https://linkedin.com/in/tarunna-sen/"
+            className="hover:-translate-y-1.5 transition-transform duration-200"
+          >
             <img
               src={LinkedIn}
               alt="LinkedIn"
               className="w-6 lg:w-8 h-6 lg:h-8"
             />
           </a>
-          <a target="_blank" href="https://github.com/T4RUNN4/">
+          <a
+            target="_blank"
+            href="https://github.com/T4RUNN4/"
+            className="hover:-translate-y-1.5 transition-transform duration-200"
+          >
             <img src={Github} alt="Github" className="w-6 lg:w-8 h-6 lg:h-8" />
           </a>
-          <a target="_blank" href="https://www.facebook.com/tarunna.002">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/tarunna.002"
+            className="hover:-translate-y-1.5 transition-transform duration-200"
+          >
             <img
               src={Facebook}
               alt="Facebook"
