@@ -35,7 +35,7 @@ export default function About() {
               delay: 0.1,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="text-5xl lg:text-7xl font-bold tracking-tight"
+            className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tight"
           >
             <span className="text-purple-500">Hello,</span>Visitor{" "}
             <span className="text-5xl lg:text-7xl">👋</span>

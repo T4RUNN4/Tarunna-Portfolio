@@ -62,7 +62,7 @@ export default function Project() {
   ];
 
   return (
-    <section id="projects" className="relative px-10 md:px-20 py-28">
+    <section id="projects" className="relative py-28">
       <div className="absolute left-1/2 top-1/2 md:h-150 md:w-150 -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-500/10 blur-3xl overflow-x-hidden" />
       <div className="relative z-10 mx-auto max-w-7xl">
         <motion.div
