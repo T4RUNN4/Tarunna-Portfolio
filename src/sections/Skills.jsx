@@ -16,11 +16,11 @@ import SkillsCard from "../components/SkillsCard";
 
 const skills = [
   {
-    name: "NextJS",
+    name: "Next.js",
     logo: NextJS,
   },
   {
-    name: "ExpressJS",
+    name: "Express.js",
     logo: ExpressJS,
   },
   {
@@ -28,15 +28,15 @@ const skills = [
     logo: React,
   },
   {
-    name: "Mongodb",
+    name: "MongoDB",
     logo: Mongodb,
   },
   {
-    name: "Typescript",
+    name: "TypeScript",
     logo: Typescript,
   },
   {
-    name: "TailwindCSS",
+    name: "Tailwind CSS",
     logo: TailwindCSS,
   },
   {
@@ -44,7 +44,7 @@ const skills = [
     logo: DaisyUI,
   },
   {
-    name: "BetterAuth",
+    name: "Better Auth",
     logo: BetterAuth,
   },
   {
@@ -52,7 +52,7 @@ const skills = [
     logo: Git,
   },
   {
-    name: "Github",
+    name: "GitHub",
     logo: Github,
   },
 ];
