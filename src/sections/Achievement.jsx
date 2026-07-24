@@ -26,26 +26,30 @@ export default function Achievements() {
           </div>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-14">
-          <DetailsCard
-            logo={SPSC}
-            rounded="true"
-            alt="SPSC"
-            date="SPSC Computer Club"
-            course="Champion"
-            subject="SPSC ICT and Programming Contest 2022"
-            description="Secured Champion position by competing at the Senior Category"
-            href="https://i.ibb.co.com/PX2r17m/Image.jpg"
-          />
-          <DetailsCard
-            logo={TC}
-            rounded="true"
-            alt="Tech Cluder"
-            date="Tech Cluder"
-            course="1st Runner's UP"
-            subject="CodeStrom 2025"
-            description="Secured 1st runner's up position in by solving 7 out of 8 problems"
-            href="https://www.facebook.com/share/p/1bN1aGRR3X/"
-          />
+          <div className="hover:scale-105 transition-transform duration-200">
+            <DetailsCard
+              logo={SPSC}
+              rounded="true"
+              alt="SPSC"
+              date="SPSC Computer Club"
+              course="Champion"
+              subject="SPSC ICT and Programming Contest 2022"
+              description="Secured Champion position by competing at the Senior Category"
+              href="https://i.ibb.co.com/PX2r17m/Image.jpg"
+            />
+          </div>
+          <div className="hover:scale-105 transition-transform duration-200">
+            <DetailsCard
+              logo={TC}
+              rounded="true"
+              alt="Tech Cluder"
+              date="Tech Cluder"
+              course="1st Runner's UP"
+              subject="CodeStrom 2025"
+              description="Secured 1st runner's up position in by solving 7 out of 8 problems"
+              href="https://www.facebook.com/share/p/1bN1aGRR3X/"
+            />
+          </div>
         </div>
       </div>
     </section>
