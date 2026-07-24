@@ -11,6 +11,7 @@ import Github from "../assets/Github.svg";
 import Git from "../assets/Git.svg";
 import ExpressJS from "../assets/ExpressJS.svg";
 import Typescript from "../assets/Typescript.svg";
+import NodeJS from "../assets/NodeJS.svg";
 
 import SkillsCard from "../components/SkillsCard";
 
@@ -34,6 +35,10 @@ const skills = [
   {
     name: "TypeScript",
     logo: Typescript,
+  },
+  {
+    name: "Node.js",
+    logo: NodeJS,
   },
   {
     name: "Tailwind CSS",
