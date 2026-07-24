@@ -15,7 +15,7 @@ export default function Project() {
         "Legal Ease is a marketplace for lawyers and clients similar to Fiverr and upwork. Here lawyers can come and registed their profile as well as clients can browse and hire lawyer for their legal process. A one stop solution for both lawyer and clients",
       liveLink: "https://legal-ease-tarunna.vercel.app/",
       github: "https://github.com/T4RUNN4/Legal-Ease",
-      techs: ["NextJS", "ExpressJS", "ReactJS", "Mongodb"],
+      techs: ["NextJS", "ExpressJS", "Mongodb"],
       features: [
         "Multiple Laywer Gigs under one unified profile",
         "Hiring conformation before payment processing",
