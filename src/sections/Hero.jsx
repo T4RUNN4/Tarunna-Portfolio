@@ -5,7 +5,6 @@ import ExpressJS from "../assets/ExpressJS.svg";
 import Mongodb from "../assets/Mongodb.svg";
 import Typescript from "../assets/Typescript.svg";
 import { ArrowUpRight } from "lucide-react";
-import Resume from "../assets/Resume-Tarunna_Sen.pdf";
 
 export default function About() {
   return (
@@ -71,7 +70,7 @@ export default function About() {
             className="mt-2 flex gap-4"
           >
             <a
-              href={Resume}
+              href="https://docs.google.com/document/d/1jueY3zJvHrP1hHGaGDHV0YJyIFZWufKNAYlA4dyx56A/export?format=pdf"
               download="resume-tarunna-sen.pdf"
               className="rounded-sm bg-purple-500 px-6 py-3 text-black hover:cursor-pointer hover:bg-purple-600 hover:scale-105 transition-transform duration-200"
             >
