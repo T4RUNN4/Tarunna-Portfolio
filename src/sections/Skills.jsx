@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 
+import HTML5 from "../assets/HTML5.svg";
+import CSS3 from "../assets/CSS3.svg";
 import JavaScript from "../assets/JavaScript.png";
 import TailwindCSS from "../assets/TailwindCSS.svg";
 import DaisyUI from "../assets/DaisyUI.svg";
@@ -17,6 +19,14 @@ import Stripe from "../assets/Stripe.svg";
 import SkillsCard from "../components/SkillsCard";
 
 const skills = [
+  {
+    name: "HTML5",
+    logo: HTML5,
+  },
+  {
+    name: "CSS3",
+    logo: CSS3,
+  },
   {
     name: "JavaScript",
     logo: JavaScript,
