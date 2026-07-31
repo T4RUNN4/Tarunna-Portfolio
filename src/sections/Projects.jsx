@@ -18,8 +18,7 @@ export default function Project() {
       features: [
         "Product Management with CRUD Operation",
         "Customer Review Functionality",
-        "AI-powered content genertaion",
-        "AI-chat feature",
+        "AI-powered content genertaion and Chat Support",
       ],
       improvements: [],
       image: OLABU,
