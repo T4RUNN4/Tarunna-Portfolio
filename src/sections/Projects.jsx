@@ -1,13 +1,30 @@
 import { motion } from "framer-motion";
 
-import Portfolio from "../assets/portfolio.png";
-import Ctgbus from "../assets/Ctgbus.png";
+import OLABU from "../assets/Olabu.png";
 import LegalEase from "../assets/LegalEase.jpeg";
 
 import ProjectCard from "../components/ProjectsCard";
 
 export default function Project() {
   const projects = [
+    {
+      name: "OLABU",
+      status: "Completed",
+      description:
+        "OLABU is a customized wallboards brand from Bangladesh that provides PVC wallboards in different size and design as per customers requirements. This website fulfils OLABU's purpose of showing their products and customer review",
+      liveLink: "https://the-olabu.vercel.app/",
+      github: "https://github.com/T4RUNN4/Olabu-Frontend",
+      techs: ["TypeScript", "NextJS", "Mongodb"],
+      features: [
+        "Product Management with CRUD Operation",
+        "Customer Review Functionality",
+        "AI-powered content genertaion",
+        "AI-chat feature",
+      ],
+      improvements: [],
+      image: OLABU,
+      alt: "olabu ui",
+    },
     {
       name: "Legal Ease",
       status: "Completed",
@@ -25,39 +42,6 @@ export default function Project() {
       improvements: [],
       image: LegalEase,
       alt: "legal ease ui",
-    },
-    {
-      name: "Personal Portfolio",
-      status: "Completed",
-      description:
-        "As a web-developer, having a personal portfolio website is more important than breathing. So I did some researched, and made one for myself. My official portfolio website. I tried to fit the best possible info from my life and easy as well as fun for user.",
-      liveLink: "https://tarunna-sen.vercel.app/",
-      github: "https://github.com/T4RUNN4/Tarunna-Portfolio",
-      techs: ["ReactJS", "Tailwindcss", "DaisyUI"],
-      features: ["Interactive smooth animation", "Fully responsive UI"],
-      improvements: ["Will work on a more unique UI"],
-      image: Portfolio,
-      alt: "portfolio ui",
-    },
-    {
-      name: "Local Bus Chattogram",
-      status: "Completed",
-      description:
-        "The other day, almost every city has a system where users can find details about local trasnport routes and fare. But for my city Chattogram, there is nothing like this. So, I made one, where users can search for local buses available for their destination and possible fare amount.",
-      liveLink: "https://local-bus-finder-chattogram.vercel.app/",
-      github: "https://github.com/T4RUNN4/Local-Bus-finder-Chattogram",
-      techs: ["JavaScript", "Tailwindcss"],
-      features: [
-        "Users can find buses and possible fare amount for their destination.",
-        "English language support for non-Bangladeshi people.",
-        "Users can report wrong data via Google Form.",
-      ],
-      improvements: [
-        "Local Language of Chattogram will be added",
-        "Data will be crowdsourced for improvements",
-      ],
-      image: Ctgbus,
-      alt: "Local Bus Chattogram ui",
     },
   ];
 

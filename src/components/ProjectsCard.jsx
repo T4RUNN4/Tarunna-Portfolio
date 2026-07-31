@@ -14,7 +14,7 @@ export default function ProjectCard({ project }) {
       }}
       className="flex flex-col rounded-sm border border-white/10 bg-white/5 px-6 md:px-10 py-6 backdrop-blur-xl hover:border-purple-400/30 hover:bg-white/10 hover:scale-105 transition-transform duration-200"
     >
-      <div className="flex flex-col items-center justify-center gap-8">
+      <div className="flex flex-col justify-center gap-8">
         <img src={project.image} alt={project.alt} />
         <div className="flex flex-col justify-center">
           <h1 className="mb-2">
