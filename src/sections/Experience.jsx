@@ -46,18 +46,17 @@ export default function Experience() {
                   Front End Developer
                 </h6>
                 <ul className="text-sm md:text-md leading-relaxed text-white/50 mt-4 list-disc ml-4">
-                  <li>Developed a B2B e-commerce platform using React</li>
                   <li>
-                    Colaborated with UI designer to translate design concepts
-                    into responsive interface.
+                    Automated order management and inventory workflows, which
+                    significantly reduced manual administrative work.
                   </li>
                   <li>
-                    Improved customer experience through faster page loads and
-                    clean navigation
+                    Delivered the project in a tight 8-week timeline, which
+                    launched the company within the first month
                   </li>
                   <li>
-                    Built reusable React components for products listing and
-                    checkout flows
+                    Worked in collaboration with the UI/UX designer to match the
+                    brand's identity
                   </li>
                 </ul>
               </div>
