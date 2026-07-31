@@ -35,7 +35,7 @@ export default function Achievements() {
               course="Champion"
               subject="SPSC ICT and Programming Contest 2022"
               description="Secured Champion position by competing at the Senior Category"
-              href="https://i.ibb.co.com/PX2r17m/Image.jpg"
+              href="https://drive.google.com/file/d/1QpVA7vLWdBl3tsiWH6ADb8rXC1qQ_cc-/view?usp=sharing"
             />
           </div>
           <div className="hover:scale-105 transition-transform duration-200">
