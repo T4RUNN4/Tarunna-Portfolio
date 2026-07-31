@@ -108,11 +108,11 @@ export default function About() {
                   <DetailsCard
                     logo={PH}
                     alt="Programming Hero"
-                    date="2026"
+                    date="July, 2026"
                     course="Complete Web Develepment"
                     subject="MERN-stack web development course"
-                    description="Compliting 6-month long bootcamp on web development along by finishing 11 assignments."
-                    status="On-going"
+                    description="Learned full-stack development with MERN stack and got selected in the SCIC and Blackbelt programme with 98% assignment marks"
+                    status="Completed"
                   />
                 </div>
               </motion.div>
