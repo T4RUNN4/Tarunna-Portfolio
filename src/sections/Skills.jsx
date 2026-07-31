@@ -12,10 +12,19 @@ import Git from "../assets/Git.svg";
 import ExpressJS from "../assets/ExpressJS.svg";
 import Typescript from "../assets/Typescript.svg";
 import NodeJS from "../assets/NodeJS.svg";
+import Stripe from "../assets/Stripe.svg";
 
 import SkillsCard from "../components/SkillsCard";
 
 const skills = [
+  {
+    name: "JavaScript",
+    logo: JavaScript,
+  },
+  {
+    name: "TypeScript",
+    logo: Typescript,
+  },
   {
     name: "Next.js",
     logo: NextJS,
@@ -31,10 +40,6 @@ const skills = [
   {
     name: "MongoDB",
     logo: Mongodb,
-  },
-  {
-    name: "TypeScript",
-    logo: Typescript,
   },
   {
     name: "Node.js",
@@ -59,6 +64,10 @@ const skills = [
   {
     name: "GitHub",
     logo: Github,
+  },
+  {
+    name: "Stripe",
+    logo: Stripe,
   },
 ];
 
