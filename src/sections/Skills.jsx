@@ -15,6 +15,11 @@ import ExpressJS from "../assets/ExpressJS.svg";
 import Typescript from "../assets/Typescript.svg";
 import NodeJS from "../assets/NodeJS.svg";
 import Stripe from "../assets/Stripe.svg";
+import Prisma from "../assets/Prisma.svg";
+import PostgreSQL from "../assets/PostgreSQL.svg";
+import Postman from "../assets/Postman.svg";
+import Vercel from "../assets/Vercel.svg";
+import REST from "../assets/REST.svg";
 
 import SkillsCard from "../components/SkillsCard";
 
@@ -44,7 +49,7 @@ const skills = [
     logo: ExpressJS,
   },
   {
-    name: "React",
+    name: "React.js",
     logo: React,
   },
   {
@@ -56,8 +61,20 @@ const skills = [
     logo: NodeJS,
   },
   {
+    name: "Prisma ORM",
+    logo: Prisma,
+  },
+  {
+    name: "PostgreSQL",
+    logo: PostgreSQL,
+  },
+  {
     name: "Tailwind CSS",
     logo: TailwindCSS,
+  },
+  {
+    name: "REST API",
+    logo: REST,
   },
   {
     name: "daisyUI",
@@ -74,6 +91,14 @@ const skills = [
   {
     name: "GitHub",
     logo: Github,
+  },
+  {
+    name: "Postman",
+    logo: Postman,
+  },
+  {
+    name: "Vercel",
+    logo: Vercel,
   },
   {
     name: "Stripe",
