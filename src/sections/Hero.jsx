@@ -53,8 +53,8 @@ export default function About() {
             <br />
             <div className="flex items-center gap-2">
               Favorite Tech:{" "}
-              <img src={NextJS} alt="NextJS" className="ml-4 w-15 h-15" />
-              <img src={ExpressJS} alt="ExpressJS" className="ml-2 w-15 h-15" />
+              <img src={NextJS} alt="NextJS" className="ml-4 w-8 h-8" />
+              <img src={ExpressJS} alt="ExpressJS" className="ml-2 w-8 h-8" />
               <img src={Mongodb} alt="Mongodb" className="w-10 h-10" />
               <img src={Typescript} alt="Typescript" className="w-8 h-8" />
             </div>
@@ -70,7 +70,7 @@ export default function About() {
             className="mt-2 flex gap-4"
           >
             <a
-              href="https://docs.google.com/document/d/1jueY3zJvHrP1hHGaGDHV0YJyIFZWufKNAYlA4dyx56A/export?format=pdf&tab=t.0"
+              href="https://script.google.com/macros/s/AKfycbzKYuQpLk_uBFQg6PkwJrDqDjFCxZnZQOY6zBxxM2Tx44_XrMDNMJIV3crBIjZOn7o/exec?role=Full%20Stack%20Developer"
               download="resume-tarunna-sen.pdf"
               className="rounded-sm bg-purple-500 px-6 py-3 text-black hover:cursor-pointer hover:bg-purple-600 hover:scale-105 transition-transform duration-200"
             >
