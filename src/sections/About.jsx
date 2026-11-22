@@ -1,160 +1,84 @@
 import { motion } from "framer-motion";
+import portfolio from "../data/portfolio";
+import SafeImage from "../components/SafeImage";
+import { FadeInView, ease } from "../components/Motion";
 
-import CPI from "../assets/CPI.png";
-import Harvard from "../assets/Harvard.svg";
-import PH from "../assets/PH.svg";
-
-import DetailsCard from "../components/DetailsCard";
+function Polaroid({ photo, delay = 0 }) {
+  return (
+    <motion.figure
+      className={`relative inline-block w-full max-w-xs bg-white p-2 pb-1 shadow-[0_6px_18px_rgba(17,18,18,0.22)] ${photo.rotate}`}
+      initial={{ opacity: 0, y: 32, rotate: photo.rotate.includes("-") ? -8 : 8 }}
+      whileInView={{ opacity: 1, y: 0, rotate: photo.rotate.includes("-") ? -3 : 3 }}
+      whileHover={{ scale: 1.04, rotate: 0, zIndex: 2 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.55, delay, ease }}
+    >
+      <span aria-hidden className="absolute -left-4 -top-2 z-10 h-5 w-16 -rotate-[38deg] bg-[var(--ca-cyan)]/70 shadow-[0_1px_3px_rgba(17,18,18,0.15)]" />
+      <span aria-hidden className="absolute -right-4 -top-2 z-10 h-5 w-16 rotate-[38deg] bg-[var(--ca-yellow-soft)]/70 shadow-[0_1px_3px_rgba(17,18,18,0.15)]" />
+      <div className="aspect-[4/5] w-full overflow-hidden">
+        <div className="relative h-full w-full overflow-hidden">
+          <SafeImage
+            src={photo.src}
+            alt={photo.caption}
+            className="ca-sharp-media absolute inset-0 h-full w-full object-cover"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+      <figcaption className="ca-hand mt-1 text-center text-lg leading-tight text-[var(--ca-ink)]/70">
+        {photo.caption}
+      </figcaption>
+    </motion.figure>
+  );
+}
 
 export default function About() {
+  const { about } = portfolio;
+
   return (
-    <section id="about" className="relative py-28">
-      <div className="absolute md:h-150 md:w-150 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-500/10 blur-3xl overflow-x-hidden" />
+    <section id="about" className="ca-grid relative scroll-mt-24 px-4 pb-20 sm:pb-28">
+      <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
+        <FadeInView y={16}>
+          <p className="ca-hand text-2xl text-[var(--ca-ink)] sm:text-3xl">{about.label}</p>
+        </FadeInView>
 
-      <div className="relative z-10 mx-auto max-w-7xl">
-        <motion.div
-          initial={{ opacity: 0, y: 70 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{
-            duration: 0.8,
-            ease: [0.22, 1, 0.36, 1],
-          }}
-          className="text-center"
+        <FadeInView
+          delay={0.1}
+          className="mt-6 w-full rounded-[2rem] border-[3px] border-[var(--ca-ink)] bg-white px-6 py-8 sm:px-10 sm:py-10"
         >
-          <div className="leading-none">
-            <h2 className="text-purple-500 font-bold text-4xl md:text-6xl lg:text-8xl">
-              About <span className="text-white">Me</span>
-            </h2>
-          </div>
-        </motion.div>
+          <p className="ca-hand text-3xl text-[var(--ca-ink)] sm:text-4xl">{about.title}</p>
+          <p className="mt-5 text-lg leading-relaxed text-[var(--ca-ink)]/85 sm:text-xl">
+            {about.body}
+          </p>
+        </FadeInView>
 
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="flex flex-col gap-4">
-            <div>
-              <div className="leading-none">
-                <motion.h2
-                  initial={{ opacity: 0, y: 70 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 0.8,
-                    delay: 0.1,
-                    ease: [0.22, 1, 0.36, 1],
-                  }}
-                  className="text-purple-500 font-medium text-3xl"
-                >
-                  Education
-                </motion.h2>
-              </div>
-              <motion.div
-                initial={{ opacity: 0, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{
-                  duration: 0.7,
-                  delay: 0.05,
-                  ease: [0.22, 1, 0.36, 1],
-                }}
-                className="mt-6 group relative overflow-hidden hover:scale-105 transition-transform durna"
-              >
-                <DetailsCard
-                  logo={CPI}
-                  alt="CPI"
-                  date="2024 - 2027"
-                  course="Diploma-in-Engineering"
-                  subject="Computer Science and Technology"
-                  description="Studying Diploma-in-Engineering from Chattogram Polytechnic Institute on Computer Science and Technolgy."
-                  status="On-going"
-                />
-              </motion.div>
-            </div>
-            <div className="mt-6">
-              <div className="leading-none">
-                <motion.h2
-                  initial={{ opacity: 0, y: 70 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 0.8,
-                    delay: 0.1,
-                    ease: [0.22, 1, 0.36, 1],
-                  }}
-                  className="text-purple-500 font-medium text-3xl"
-                >
-                  Certification
-                </motion.h2>
-              </div>
-              <motion.div
-                initial={{ opacity: 0, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{
-                  duration: 0.7,
-                  delay: 0.05,
-                  ease: [0.22, 1, 0.36, 1],
-                }}
-                className="mt-6 group relative overflow-hidden "
-              >
-                <div className="grid grid-rows-2 gap-2">
-                  <DetailsCard
-                    logo={Harvard}
-                    href="https://cs50.harvard.edu/certificates/dcef13b4-f103-4560-a406-f5931f14353d"
-                    alt="Harvard"
-                    date="June, 2025"
-                    course="CS50x"
-                    subject="Introduction to Computer Science"
-                    description="Completed CS50 from Harvard and learned about C, Python, Web developement, Database and DSA by finishing 9 assignments and 1 final project."
-                    status="Completed"
-                  />
-                  <DetailsCard
-                    logo={PH}
-                    alt="Programming Hero"
-                    date="July, 2026"
-                    course="Complete Web Develepment"
-                    subject="MERN-stack web development course"
-                    description="Learned full-stack development with MERN stack and got selected in the SCIC and Blackbelt programme with 98% assignment marks"
-                    status="Completed"
-                  />
-                </div>
-              </motion.div>
-            </div>
-          </div>
-          <motion.div
-            initial={{ opacity: 0, y: 80 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{
-              duration: 0.7,
-              delay: 0.05,
-              ease: [0.22, 1, 0.36, 1],
-            }}
-            className="md:text-lg lg:text-xl text-justify text-white/50"
-          >
-            Programming started as curiosity, but it quickly became something
-            much bigger for me. From building small experiments in my early
-            teens to developing full-stack web applications today, I've always
-            been drawn to the process of turning ideas into something people can
-            actually use and enjoy.
-            <br />
-            <br />
-            I naturally enjoy the logic side of development — solving problems,
-            structuring systems, and making things work the way they should. But
-            at the same time, design has always been part of how I think. My
-            background in graphics design shaped the way I approach interfaces,
-            helping me build websites that feel clean, intentional, and human.
-            <br />
-            <br />
-            I work mainly with the MERN stack and love creating projects that
-            bring real value to everyday life instead of adding unnecessary
-            complexity. I strongly believe functional websites leave a bigger
-            impact than feature-heavy ones that forget the user experience.
-            <br />
-            <br />
-            Outside of development, I spend time exploring Cyber Security,
-            playing football, and diving into CTF challenges that sharpen both
-            my creativity and problem-solving mindset. For me, tech has never
-            been just about writing code — it's about building experiences
-            people remember.
-          </motion.div>
+        <div className="mt-12 flex w-full justify-center">
+          {about.photos.map((photo, i) => (
+            <Polaroid key={photo.caption} photo={photo} delay={0.08 + i * 0.1} />
+          ))}
+        </div>
+
+        <div className="mt-12 flex w-full flex-wrap justify-center gap-3">
+          {about.skills.map((skill, i) => (
+            <FadeInView key={skill.label} delay={0.05 * i} y={18}>
+              <span className="ca-mono ca-hover-pop inline-flex items-center gap-2.5 rounded-full border-[3px] border-white bg-[var(--ca-yellow-soft)] px-4 py-2 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] shadow-[0_4px_10px_rgba(25,21,16,0.18)]">
+                {skill.label}
+                <span className="inline-flex items-center gap-1.5">
+                  {skill.logos.map((src) => (
+                    <img
+                      key={src}
+                      src={src}
+                      alt=""
+                      className="h-5 w-5 object-contain"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  ))}
+                </span>
+              </span>
+            </FadeInView>
+          ))}
         </div>
       </div>
     </section>
